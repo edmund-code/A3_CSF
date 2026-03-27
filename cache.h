@@ -119,7 +119,7 @@ public:
      * returns: position of the block chosen for eviction
      * uses lru (smallest last_used) or fifo (smallest load_time) depending on is_lru
      */
-    int find_victim_block(uint32_t index) const;
+    int find_evict_block(uint32_t index) const;
 
     /*
      * updates block state and cycle count on a cache hit
@@ -139,6 +139,3 @@ public:
 };
 
 #endif // CACHE_H
-        
-    
-}

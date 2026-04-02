@@ -8,7 +8,7 @@ int main( int argc, char **argv ) {
   // TODO: implement  
   if (argc != 7) {
     
-    std::cerr << "./csim numSet blocksPer blockSize writePol allocPol evictPol, you did this wrong" << std::endl;
+    std::cerr << "./csim numSets blocksPerSet blockSize write-allocate|no-write-allocate write-through|write-back lru|fifo, you did this wrong" << std::endl;
     
     return 1;
   }

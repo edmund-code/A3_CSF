@@ -115,7 +115,13 @@ int Cache::find_evict_block(uint32_t index) const {
             }
         }
     } else {
-        // finish this for fifo
+        uint32_t min_time = sets[index].blocks[0].load_time;
+        for (uint32_t i = 1; i < blocks_per_set; i++) {
+            if (sets[index].blocks[i].load_time < min_time) {
+                min_time = sets[index].blocks[i].load_time;
+                block_to_evict = i;
+            }
+        }
     }
     return block_to_evict;
 }

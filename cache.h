@@ -74,13 +74,13 @@ public:
     uint32_t time_counter; 
 
     // track needed statistics for output
-    uint32_t total_loads;
-    uint32_t total_stores;
-    uint32_t load_hits;
-    uint32_t load_misses;
-    uint32_t store_hits;
-    uint32_t store_misses;
-    uint32_t total_cycles;
+    uint64_t total_loads;
+    uint64_t total_stores;
+    uint64_t load_hits;
+    uint64_t load_misses;
+    uint64_t store_hits;
+    uint64_t store_misses;
+    uint64_t total_cycles;
 
     // helper functions to get index and tag from address
     /*

@@ -5,8 +5,8 @@ Edmund Tsou
 Evan Batten
 
 Contributions:
-Edmund: something or the other
-Evan: some more stuff
+Edmund: part of cache.cpp, part of main.cpp, cache report
+Evan: 2nd part of cache.cpp, 1 part of main.cpp
 
 TODO (for MS3): best cache report
 
